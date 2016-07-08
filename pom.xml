@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>io.sarl.dependencies</groupId>
+	<artifactId>p2-dependencies</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<name>P2 Repository</name>
+	<packaging>pom</packaging>
+
+	<properties>
+		<jeromq.version>0.3.5</jeromq.version>
+		<gson.version>2.4</gson.version>
+		<hazelcast.version>3.7-EA</hazelcast.version>
+		<afc.version>12.0</afc.version>
+	</properties>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.reficio</groupId>
+				<artifactId>p2-maven-plugin</artifactId>
+				<version>1.1.1</version>
+				<executions>
+					<execution>
+						<id>default-cli</id>
+						<phase>install</phase>
+						<goals>
+							<goal>site</goal>
+						</goals>
+						<configuration>
+							<artifacts>
+								<artifact><id>com.hazelcast:hazelcast:${hazelcast.version}</id></artifact>
+								<artifact><id>org.zeromq:jeromq:${jeromq.version}</id></artifact>
+								<artifact><id>com.google.code.gson:gson:${gson.version}</id></artifact>
+							</artifacts>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+

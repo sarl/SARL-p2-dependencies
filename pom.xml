@@ -104,5 +104,21 @@
 		</profile>
 	</profiles>
 
+
+	<!-- =================== -->
+	<!-- ==== Deployment === -->
+	<!-- =================== -->
+
+	<distributionManagement>
+		<repository>
+			<id>local-release-repository</id>
+			<url>${local.maven.repository.path}</url>
+		</repository>
+		<snapshotRepository>
+			<id>local-repository</id>
+			<url>${local.maven.repository.path}</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
 

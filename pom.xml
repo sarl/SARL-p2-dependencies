@@ -16,7 +16,7 @@
 		<!-- Local path to the Maven repository -->
 		<local.maven.repository.path>file:///var/www/sarl-maven-repository/</local.maven.repository.path>
 		<!-- Local path to the P2 repository -->
-		<local.p2.repository.path>file:///var/www/sarl-p2-repository/</local.p2.repository.path>
+		<local.p2.repository.path>file:///var/www/sarl-p2-dependencies-repository/</local.p2.repository.path>
 	</properties>
 	<build>
 		<plugins>

@@ -64,10 +64,21 @@
 								</artifact>
 								<artifact>
 									<id>com.google.guava:guava:${guava.version}</id>
+									<source>true</source>
 								</artifact>
 								<artifact>
 									<id>com.google.inject:guice:${guice.version}</id>
+									<excludes>
+										<exclude>com.google.guava:guava:*</exclude>
+									</excludes>
 								</artifact>
+								<artifact>
+									<id>com.google.inject.extensions:guice-multibindings:${guice.version}</id>
+									<excludes>
+										<exclude>com.google.guava:guava:*</exclude>
+									</excludes>
+								</artifact>
+
 							</artifacts>
 						</configuration>
 					</execution>

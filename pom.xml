@@ -52,28 +52,37 @@
 							<artifacts>
 								<artifact>
 									<id>com.hazelcast:hazelcast:${hazelcast.version}</id>
+									<override>true</override>
 								</artifact>
 								<artifact>
 									<id>org.zeromq:jeromq:${jeromq.version}</id>
+									<override>true</override>
 								</artifact>
 								<artifact>
 									<id>com.google.code.gson:gson:${gson.version}</id>
+									<override>true</override>
 								</artifact>
 								<artifact>
 									<id>commons-cli:commons-cli:${apachecommons.version}</id>
+									<override>true</override>
 								</artifact>
 								<artifact>
 									<id>com.google.guava:guava:${guava.version}</id>
 									<source>true</source>
+									<transitive>true</transitive>
+									<override>true</override>
 								</artifact>
 								<artifact>
 									<id>com.google.inject:guice:${guice.version}</id>
+									<override>true</override>
 									<excludes>
 										<exclude>com.google.guava:guava:*</exclude>
 									</excludes>
 								</artifact>
 								<artifact>
 									<id>com.google.inject.extensions:guice-multibindings:${guice.version}</id>
+									<source>true</source>
+									<override>true</override>
 									<excludes>
 										<exclude>com.google.guava:guava:*</exclude>
 									</excludes>

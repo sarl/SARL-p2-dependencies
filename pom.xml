@@ -74,7 +74,7 @@
 								</artifact>
 								<artifact>
 									<id>com.google.inject:guice:${guice.version}</id>
-									<override>true</override>
+									<override>false</override>
 									<excludes>
 										<exclude>com.google.guava:guava:*</exclude>
 									</excludes>
@@ -82,7 +82,7 @@
 								<artifact>
 									<id>com.google.inject.extensions:guice-multibindings:${guice.version}</id>
 									<source>true</source>
-									<override>true</override>
+									<override>false</override>
 									<excludes>
 										<exclude>com.google.guava:guava:*</exclude>
 									</excludes>

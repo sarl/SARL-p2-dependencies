@@ -73,6 +73,18 @@
 									<override>true</override>
 								</artifact>
 								<artifact>
+									<id>com.google.guava:guava-testlib:${guava.version}</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>true</override>
+								</artifact>
+								<artifact>
+									<id>com.google.guava:guava-testlib:${guava.version}</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>true</override>
+								</artifact>
+								<artifact>
 									<id>com.google.inject:guice:${guice.version}</id>
 									<override>false</override>
 									<excludes>

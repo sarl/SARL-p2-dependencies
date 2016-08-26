@@ -75,13 +75,13 @@
 									<id>com.google.guava:guava:${guava.version}</id>
 									<source>true</source>
 									<transitive>true</transitive>
-									<override>true</override>
+									<override>false</override>
 								</artifact>
 								<artifact>
 									<id>com.google.guava:guava-testlib:${guava.version}</id>
 									<source>true</source>
 									<transitive>true</transitive>
-									<override>true</override>
+									<override>false</override>
 								</artifact>
 								<artifact>
 									<id>com.google.guava:guava-testlib:${guava.version}</id>

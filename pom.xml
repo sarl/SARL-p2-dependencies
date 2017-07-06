@@ -10,6 +10,7 @@
 
 	<properties>
 		<!-- Dependencies for the last development release -->
+		<apachespifly.version.UNSTABLE>1.0.8</apachespifly.version.UNSTABLE>
 		<jeromq.version.UNSTABLE>0.3.6</jeromq.version.UNSTABLE>
 		<gson.version.UNSTABLE>2.8.0</gson.version.UNSTABLE>
 		<javassist.version.UNSTABLE>3.22.0-CR1</javassist.version.UNSTABLE>
@@ -62,6 +63,10 @@
 						<configuration>
 							<artifacts>
 	<!-- Dependencies for the last development release -->
+								<artifact>
+									<id>org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:${apachespifly.version.UNSTABLE}</id>
+									<override>false</override>
+								</artifact>
 								<artifact>
 									<id>com.hazelcast:hazelcast:${hazelcast.version.UNSTABLE}</id>
 									<override>true</override>

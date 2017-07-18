@@ -9,24 +9,6 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<!-- Dependencies for the last development release -->
-		<apachespifly.version.UNSTABLE>1.0.8</apachespifly.version.UNSTABLE>
-		<jeromq.version.UNSTABLE>0.3.6</jeromq.version.UNSTABLE>
-		<gson.version.UNSTABLE>2.8.0</gson.version.UNSTABLE>
-		<javassist.version.UNSTABLE>3.22.0-CR1</javassist.version.UNSTABLE>
-		<hazelcast.version.UNSTABLE>3.8-EA</hazelcast.version.UNSTABLE>
-		<apachecommons.version.UNSTABLE>1.3.1</apachecommons.version.UNSTABLE>
-		<guava.version.UNSTABLE>18.0</guava.version.UNSTABLE>
-		<guice.version.UNSTABLE>4.1.0</guice.version.UNSTABLE>
-		<jsr107.version.UNSTABLE>1.0.0</jsr107.version.UNSTABLE>
-		<!-- Dependencies for the last stable release -->
-		<jeromq.version.STABLE>0.3.5</jeromq.version.STABLE>
-		<gson.version.STABLE>2.4</gson.version.STABLE>
-		<javassist.version.STABLE>3.20.0-GA</javassist.version.STABLE>
-		<hazelcast.version.STABLE>3.7-EA</hazelcast.version.STABLE>
-		<apachecommons.version.STABLE>1.3.1</apachecommons.version.STABLE>
-		<guava.version.STABLE>18.0</guava.version.STABLE>
-		<guice.version.STABLE>4.0</guice.version.STABLE>
 		<!-- Local path to the Maven repository -->
 		<local.maven.repository.path>file:///var/www/sarl-maven-repository/</local.maven.repository.path>
 		<!-- Local path to the P2 repository -->
@@ -62,58 +44,89 @@
 						</goals>
 						<configuration>
 							<artifacts>
-	<!-- Dependencies for the last development release -->
+	<!-- Apache SPI-Fly -->
 								<artifact>
-									<id>org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:${apachespifly.version.UNSTABLE}</id>
+									<id>org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:1.0.8</id>
 									<override>false</override>
 								</artifact>
+	<!-- ZeroMQ -->
 								<artifact>
-									<id>com.hazelcast:hazelcast:${hazelcast.version.UNSTABLE}</id>
+									<id>org.zeromq:jeromq:0.4.2</id>
 									<override>true</override>
 								</artifact>
 								<artifact>
-									<id>org.zeromq:jeromq:${jeromq.version.UNSTABLE}</id>
+									<id>org.zeromq:jeromq:0.3.6</id>
 									<override>true</override>
 								</artifact>
 								<artifact>
-									<id>com.google.code.gson:gson:${gson.version.UNSTABLE}</id>
+									<id>org.zeromq:jeromq:0.3.5</id>
+									<override>true</override>
+								</artifact>
+	<!-- Gson -->
+								<artifact>
+									<id>com.google.code.gson:gson:2.8.0</id>
 									<override>true</override>
 								</artifact>
 								<artifact>
-									<id>org.javassist:javassist:${javassist.version.UNSTABLE}</id>
+									<id>com.google.code.gson:gson:2.4</id>
+									<override>true</override>
+								</artifact>
+	<!-- Javassist -->
+								<artifact>
+									<id>org.javassist:javassist:3.22.0-CR1</id>
 									<override>true</override>
 								</artifact>
 								<artifact>
-									<id>commons-cli:commons-cli:${apachecommons.version.UNSTABLE}</id>
+									<id>org.javassist:javassist:3.20.0-GA</id>
+									<override>true</override>
+								</artifact>
+	<!-- Hazelcast -->
+								<artifact>
+									<id>com.hazelcast:hazelcast:3.9-EA</id>
 									<override>true</override>
 								</artifact>
 								<artifact>
-									<id>com.google.guava:guava:${guava.version.UNSTABLE}</id>
+									<id>com.hazelcast:hazelcast:3.8-EA</id>
+									<override>true</override>
+								</artifact>
+								<artifact>
+									<id>com.hazelcast:hazelcast:3.7-EA</id>
+									<override>true</override>
+								</artifact>
+	<!-- Appache Commons -->
+								<artifact>
+									<id>commons-cli:commons-cli:1.3.1</id>
+									<override>true</override>
+								</artifact>
+	<!-- Guava -->
+								<artifact>
+									<id>com.google.guava:guava:18.0</id>
 									<source>true</source>
 									<transitive>true</transitive>
 									<override>false</override>
 								</artifact>
 								<artifact>
-									<id>com.google.guava:guava-testlib:${guava.version.UNSTABLE}</id>
+									<id>com.google.guava:guava-testlib:18.0</id>
 									<source>true</source>
 									<transitive>true</transitive>
 									<override>false</override>
 								</artifact>
 								<artifact>
-									<id>com.google.guava:guava-testlib:${guava.version.UNSTABLE}</id>
+									<id>com.google.guava:guava-testlib:18.0</id>
 									<source>true</source>
 									<transitive>true</transitive>
 									<override>true</override>
 								</artifact>
+	<!-- Guice -->
 								<artifact>
-									<id>com.google.inject:guice:${guice.version.UNSTABLE}</id>
+									<id>com.google.inject:guice:4.1.0</id>
 									<override>false</override>
 									<excludes>
 										<exclude>com.google.guava:guava:*</exclude>
 									</excludes>
 								</artifact>
 								<artifact>
-									<id>com.google.inject.extensions:guice-multibindings:${guice.version.UNSTABLE}</id>
+									<id>com.google.inject.extensions:guice-multibindings:4.1.0</id>
 									<source>true</source>
 									<override>false</override>
 									<excludes>
@@ -121,66 +134,27 @@
 									</excludes>
 								</artifact>
 								<artifact>
-									<id>org.jsr107.ri:cache-ri-impl:${jsr107.version.UNSTABLE}</id>
-									<source>true</source>
-									<transitive>true</transitive>
-									<override>true</override>
-								</artifact>
-	<!-- Dependencies for the last stable release -->
-								<artifact>
-									<id>com.hazelcast:hazelcast:${hazelcast.version.STABLE}</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>org.zeromq:jeromq:${jeromq.version.STABLE}</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>com.google.code.gson:gson:${gson.version.STABLE}</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>org.javassist:javassist:${javassist.version.STABLE}</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>commons-cli:commons-cli:${apachecommons.version.STABLE}</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>com.google.guava:guava:${guava.version.STABLE}</id>
-									<source>true</source>
-									<transitive>true</transitive>
-									<override>false</override>
-								</artifact>
-								<artifact>
-									<id>com.google.guava:guava-testlib:${guava.version.STABLE}</id>
-									<source>true</source>
-									<transitive>true</transitive>
-									<override>false</override>
-								</artifact>
-								<artifact>
-									<id>com.google.guava:guava-testlib:${guava.version.STABLE}</id>
-									<source>true</source>
-									<transitive>true</transitive>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>com.google.inject:guice:${guice.version.STABLE}</id>
+									<id>com.google.inject:guice:4.0</id>
 									<override>false</override>
 									<excludes>
 										<exclude>com.google.guava:guava:*</exclude>
 									</excludes>
 								</artifact>
 								<artifact>
-									<id>com.google.inject.extensions:guice-multibindings:${guice.version.STABLE}</id>
+									<id>com.google.inject.extensions:guice-multibindings:4.0</id>
 									<source>true</source>
 									<override>false</override>
 									<excludes>
 										<exclude>com.google.guava:guava:*</exclude>
 									</excludes>
 								</artifact>
-
+	<!-- JSR107 -->
+								<artifact>
+									<id>org.jsr107.ri:cache-ri-impl:1.0.0</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>true</override>
+								</artifact>
 							</artifacts>
 						</configuration>
 					</execution>

@@ -1,0 +1,23 @@
+# NetBean / Eclipse
+bin/
+
+# Subversion and CVS
+**/.svn/
+**/.cvs/
+
+# Maven
+target/
+
+# Compiled files
+**/*.class
+**/*.dll
+**/*.exe
+
+# Temp files
+**/*.bak
+**/*~
+workspace/
+
+#Others
+**/.DS_Store
+

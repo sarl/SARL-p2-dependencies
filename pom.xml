@@ -60,25 +60,9 @@
 									<id>org.zeromq:jeromq:0.4.2</id>
 									<override>true</override>
 								</artifact>
-								<artifact>
-									<id>org.zeromq:jeromq:0.3.6</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>org.zeromq:jeromq:0.3.5</id>
-									<override>true</override>
-								</artifact>
 	<!-- Gson -->
 								<artifact>
 									<id>com.google.code.gson:gson:2.8.5</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>com.google.code.gson:gson:2.8.0</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>com.google.code.gson:gson:2.4</id>
 									<override>true</override>
 								</artifact>
 	<!-- Javassist -->
@@ -86,34 +70,14 @@
 									<id>org.javassist:javassist:3.23.1-GA</id>
 									<override>true</override>
 								</artifact>
-								<artifact>
-									<id>org.javassist:javassist:3.22.0-CR1</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>org.javassist:javassist:3.20.0-GA</id>
-									<override>true</override>
-								</artifact>
 	<!-- Hazelcast -->
 								<artifact>
 									<id>com.hazelcast:hazelcast:3.9-EA</id>
 									<override>true</override>
 								</artifact>
-								<artifact>
-									<id>com.hazelcast:hazelcast:3.8-EA</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>com.hazelcast:hazelcast:3.7-EA</id>
-									<override>true</override>
-								</artifact>
 	<!-- Appache Commons -->
 								<artifact>
 									<id>commons-cli:commons-cli:1.4</id>
-									<override>true</override>
-								</artifact>
-								<artifact>
-									<id>commons-cli:commons-cli:1.3.1</id>
 									<override>true</override>
 								</artifact>
 	<!-- Guava -->
@@ -129,67 +93,18 @@
 									<transitive>true</transitive>
 									<override>false</override>
 								</artifact>
-								<artifact>
-									<id>com.google.guava:guava:18.0</id>
-									<source>true</source>
-									<transitive>true</transitive>
-									<override>false</override>
-								</artifact>
-								<artifact>
-									<id>com.google.guava:guava-testlib:18.0</id>
-									<source>true</source>
-									<transitive>true</transitive>
-									<override>false</override>
-								</artifact>
 	<!-- Guice -->
 								<artifact>
 									<id>com.google.inject:guice:4.2.1</id>
 									<override>false</override>
-									<excludes>
-										<exclude>com.google.guava:guava:*</exclude>
-									</excludes>
-								</artifact>
-								<artifact>
-									<id>com.google.inject.extensions:guice-multibindings:4.2.1</id>
-									<source>true</source>
-									<override>false</override>
-									<excludes>
-										<exclude>com.google.guava:guava:*</exclude>
-									</excludes>
-								</artifact>
-								<artifact>
-									<id>com.google.inject:guice:4.1.0</id>
-									<override>false</override>
-									<excludes>
-										<exclude>com.google.guava:guava:*</exclude>
-									</excludes>
-								</artifact>
-								<artifact>
-									<id>com.google.inject.extensions:guice-multibindings:4.1.0</id>
-									<source>true</source>
-									<override>false</override>
-									<excludes>
-										<exclude>com.google.guava:guava:*</exclude>
-									</excludes>
-								</artifact>
-								<artifact>
-									<id>com.google.inject:guice:4.0</id>
-									<override>false</override>
-									<excludes>
-										<exclude>com.google.guava:guava:*</exclude>
-									</excludes>
-								</artifact>
-								<artifact>
-									<id>com.google.inject.extensions:guice-multibindings:4.0</id>
-									<source>true</source>
-									<override>false</override>
+									<transitive>true</transitive>
 									<excludes>
 										<exclude>com.google.guava:guava:*</exclude>
 									</excludes>
 								</artifact>
 	<!-- JSR107 -->
 								<artifact>
-									<id>org.jsr107.ri:cache-ri-impl:1.0.0</id>
+									<id>org.jsr107.ri:cache-ri-impl:1.1.0</id>
 									<source>true</source>
 									<transitive>true</transitive>
 									<override>true</override>

@@ -4,7 +4,7 @@
 
 	<groupId>io.sarl.dependencies</groupId>
 	<artifactId>p2-dependencies</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<name>P2 Repository</name>
 	<packaging>pom</packaging>
 
@@ -13,7 +13,7 @@
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
 				<artifactId>wagon-webdav-jackrabbit</artifactId>
-				<version>3.3.2</version>
+				<version>3.1.0</version>
 			</extension>
 		</extensions>
 

@@ -19,7 +19,7 @@ if [ -z "$MAVENSARLIO_USER" ]; then
 	exit 255
 fi
 
-PASSPHRASE=`ssh-askpass "Please enter your password to the upload server:"`
+PASSPHRASE=`ssh-askpass "Please enter your password to the upload server '${MAVENSARLIO_URL}'"`
 
 if [ -z "$PASSPHRASE" ]; then
 	echo "No passphrase" >&2

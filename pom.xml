@@ -4,7 +4,7 @@
 
 	<groupId>io.sarl.dependencies</groupId>
 	<artifactId>p2-dependencies</artifactId>
-	<version>0.2.0-SNAPSHOT</version>
+	<version>0.2.0</version>
 	<name>P2 Repository</name>
 	<packaging>pom</packaging>
 
@@ -93,6 +93,18 @@
 									<override>true</override>
 								</artifact>
 	<!-- Guava -->
+								<artifact>
+									<id>com.google.guava:guava:27.1-jre</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>false</override>
+								</artifact>
+								<artifact>
+									<id>com.google.guava:guava-testlib:27.1-jre</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>false</override>
+								</artifact>
 								<artifact>
 									<id>com.google.guava:guava:21.0</id>
 									<source>true</source>

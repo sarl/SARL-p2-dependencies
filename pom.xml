@@ -143,24 +143,6 @@
 								</artifact>
 	<!-- Guice -->
 								<artifact>
-									<id>com.google.inject:guice:4.2.2</id>
-									<override>false</override>
-									<transitive>true</transitive>
-									<excludes>
-										<exclude>com.google.guava:guava:*</exclude>
-										<exclude>com.google.guava:guava-testlib:*</exclude>
-									</excludes>
-								</artifact>
-								<artifact>
-									<id>com.google.inject.extensions:guice-multibindings:4.2.2</id>
-									<override>false</override>
-									<transitive>true</transitive>
-									<excludes>
-										<exclude>com.google.guava:guava:*</exclude>
-										<exclude>com.google.guava:guava-testlib:*</exclude>
-									</excludes>
-								</artifact>
-								<artifact>
 									<id>com.google.inject:guice:4.1.0</id>
 									<override>false</override>
 									<transitive>true</transitive>

@@ -52,7 +52,7 @@
 							<artifacts>
 	<!-- Apache SPI-Fly -->
 								<artifact>
-									<id>org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:1.0.8</id>
+											<id>org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:1.0.8</id>
 									<override>false</override>
 								</artifact>
 	<!-- ZeroMQ -->
@@ -163,6 +163,13 @@
 	<!-- JSR107 -->
 								<artifact>
 									<id>org.jsr107.ri:cache-ri-impl:1.1.0</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>true</override>
+								</artifact>
+	<!-- JUG optmized random UUID generation -->
+								<artifact>
+									<id>com.fasterxml.uuid:java-uuid-generator:4.0.1</id>
 									<source>true</source>
 									<transitive>true</transitive>
 									<override>true</override>

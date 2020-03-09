@@ -80,11 +80,11 @@
 								</artifact>
 	<!-- Hazelcast -->
 								<artifact>
-									<id>com.hazelcast:hazelcast:3.9-EA</id>
+									<id>com.hazelcast:hazelcast:4.0</id>
 									<override>true</override>
 								</artifact>
 								<artifact>
-									<id>com.hazelcast:hazelcast:3.11.2</id>
+									<id>com.hazelcast:hazelcast:3.12.6</id>
 									<override>true</override>
 								</artifact>
 	<!-- Appache Commons -->

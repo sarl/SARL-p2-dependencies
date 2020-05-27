@@ -87,6 +87,10 @@
 									<id>com.hazelcast:hazelcast:3.12.6</id>
 									<override>true</override>
 								</artifact>
+								<artifact>
+									<id>com.hazelcast:hazelcast:3.11.2</id>
+									<override>true</override>
+								</artifact>
 	<!-- Appache Commons -->
 								<artifact>
 									<id>commons-cli:commons-cli:1.4</id>

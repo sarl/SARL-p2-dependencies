@@ -52,7 +52,7 @@
 							<artifacts>
 	<!-- Apache SPI-Fly -->
 								<artifact>
-											<id>org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:1.0.8</id>
+									<id>org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:1.0.8</id>
 									<override>false</override>
 								</artifact>
 	<!-- ZeroMQ -->
@@ -147,6 +147,15 @@
 								</artifact>
 	<!-- Guice -->
 								<artifact>
+									<id>com.google.inject:guice:4.2.3</id>
+									<override>false</override>
+									<transitive>true</transitive>
+									<excludes>
+										<exclude>com.google.guava:guava:*</exclude>
+										<exclude>com.google.guava:guava-testlib:*</exclude>
+									</excludes>
+								</artifact>
+								<artifact>
 									<id>com.google.inject:guice:4.1.0</id>
 									<override>false</override>
 									<transitive>true</transitive>
@@ -155,6 +164,7 @@
 										<exclude>com.google.guava:guava-testlib:*</exclude>
 									</excludes>
 								</artifact>
+								<!-- guice-multibindings is included into guice in the more recent versions -->
 								<artifact>
 									<id>com.google.inject.extensions:guice-multibindings:4.1.0</id>
 									<override>false</override>

@@ -66,6 +66,10 @@
 								</artifact>
 	<!-- Gson -->
 								<artifact>
+									<id>com.google.code.gson:gson:2.8.6</id>
+									<override>true</override>
+								</artifact>
+								<artifact>
 									<id>com.google.code.gson:gson:2.8.5</id>
 									<override>true</override>
 								</artifact>
@@ -97,6 +101,18 @@
 									<override>true</override>
 								</artifact>
 	<!-- Guava -->
+								<artifact>
+									<id>com.google.guava:guava:29.0-jre</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>false</override>
+								</artifact>
+								<artifact>
+									<id>com.google.guava:guava-testlib:29.0-jre</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>false</override>
+								</artifact>
 								<artifact>
 									<id>com.google.guava:guava:27.1-jre</id>
 									<source>true</source>
@@ -146,15 +162,6 @@
 									<override>false</override>
 								</artifact>
 	<!-- Guice -->
-								<artifact>
-									<id>com.google.inject:guice:4.2.3</id>
-									<override>false</override>
-									<transitive>true</transitive>
-									<excludes>
-										<exclude>com.google.guava:guava:*</exclude>
-										<exclude>com.google.guava:guava-testlib:*</exclude>
-									</excludes>
-								</artifact>
 								<artifact>
 									<id>com.google.inject:guice:jar:no_aop:4.2.3</id>
 									<override>false</override>

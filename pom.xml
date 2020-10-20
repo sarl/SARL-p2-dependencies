@@ -84,17 +84,17 @@
 								</artifact>
 	<!-- Hazelcast -->
 								<artifact>
-									<id>com.hazelcast:hazelcast:4.0</id>
+									<id>com.hazelcast:hazelcast:4.0.3</id>
 									<override>true</override>
 								</artifact>
-								<artifact>
+								<!--artifact>
 									<id>com.hazelcast:hazelcast:3.12.6</id>
 									<override>true</override>
 								</artifact>
 								<artifact>
 									<id>com.hazelcast:hazelcast:3.11.2</id>
 									<override>true</override>
-								</artifact>
+								</artifact-->
 	<!-- Appache Commons -->
 								<artifact>
 									<id>commons-cli:commons-cli:1.4</id>

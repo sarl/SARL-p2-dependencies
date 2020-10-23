@@ -85,6 +85,7 @@
 	<!-- Hazelcast -->
 								<artifact>
 									<id>com.hazelcast:hazelcast:4.0.3</id>
+									<source>true</source>
 									<override>true</override>
 								</artifact>
 								<!--artifact>

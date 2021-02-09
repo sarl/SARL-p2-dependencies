@@ -100,6 +100,18 @@
 								</artifact>
 	<!-- Guava -->
 								<artifact>
+									<id>com.google.guava:guava:30.1.1-jre</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>false</override>
+								</artifact>
+								<artifact>
+									<id>com.google.guava:guava-testlib:30.1.1-jre</id>
+									<source>true</source>
+									<transitive>true</transitive>
+									<override>false</override>
+								</artifact>
+								<artifact>
 									<id>com.google.guava:guava:29.0-jre</id>
 									<source>true</source>
 									<transitive>true</transitive>

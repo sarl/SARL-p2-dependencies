@@ -88,11 +88,11 @@
 									<source>true</source>
 									<override>true</override>
 								</artifact>
-								<!--artifact>
+								<artifact>
 									<id>com.hazelcast:hazelcast:4.0.3</id>
 									<source>true</source>
 									<override>true</override>
-								</artifact-->
+								</artifact>
 	<!-- Appache Commons -->
 								<artifact>
 									<id>commons-cli:commons-cli:1.4</id>

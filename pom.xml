@@ -179,6 +179,15 @@
 								</artifact>
 	<!-- Guice -->
 								<artifact>
+									<id>com.google.inject:guice:5.0.1</id>
+									<override>false</override>
+									<transitive>true</transitive>
+									<excludes>
+										<exclude>com.google.guava:guava:*</exclude>
+										<exclude>com.google.guava:guava-testlib:*</exclude>
+									</excludes>
+								</artifact>
+								<artifact>
 									<id>com.google.inject:guice:jar:no_aop:4.2.3</id>
 									<override>false</override>
 									<transitive>true</transitive>

@@ -50,6 +50,12 @@
 						</goals>
 						<configuration>
 							<artifacts>
+	<!-- Jackson -->
+								<artifact>
+									<id>com.fasterxml.jackson.core:jackson-databind:2.11.0</id>
+									<override>true</override>
+								</artifact>
+
 	<!-- Apache SPI-Fly -->
 								<artifact>
 									<id>org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:1.0.8</id>
